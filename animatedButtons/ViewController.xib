@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="animatedButtons" customModuleProvider="target">
+            <connections>
+                <outlet property="firstButton" destination="g1Z-Ai-aOg" id="ec3-qk-EOo"/>
+                <outlet property="secondButton" destination="mfD-a4-hkK" id="q0F-z6-I1B"/>
+                <outlet property="thirdButton" destination="551-NH-a8D" id="EHy-wN-4rm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="91" translatesAutoresizingMaskIntoConstraints="NO" id="2dt-vK-DNq">
+                    <rect key="frame" x="26" y="250" width="338" height="344"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1Z-Ai-aOg" customClass="FirstBlueButton" customModule="animatedButtons" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="338" height="54"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="54" id="4Tb-rt-Ym0"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfD-a4-hkK" customClass="SecondBlueButton" customModule="animatedButtons" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="145" width="338" height="54"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="54" id="aYo-i6-a8h"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="551-NH-a8D" customClass="ThirdBlueButton" customModule="animatedButtons" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="290" width="338" height="54"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="54" id="7yu-9N-Mcr"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGray4Color"/>
+            <constraints>
+                <constraint firstItem="2dt-vK-DNq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5UP-LZ-PF0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2dt-vK-DNq" secondAttribute="trailing" constant="26" id="bjC-oY-1Yh"/>
+                <constraint firstItem="2dt-vK-DNq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="26" id="lKY-HH-zff"/>
+                <constraint firstItem="2dt-vK-DNq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xuF-VU-SmP"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
